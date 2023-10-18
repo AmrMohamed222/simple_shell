@@ -1,6 +1,6 @@
 #include "shell.h"
 
-/*
+/**
  * input_buf - buffers chained commands
  * @info: parameter struct
  * @buf: address of buffer
@@ -45,7 +45,7 @@ ssize_t input_buf(info_t *info, char **buf, size_t *len)
 	return (r);
 }
 
-/*
+/**
  * get_input - gets a line minus the newline
  * @info: parameter struct
  *
@@ -87,7 +87,7 @@ ssize_t get_input(info_t *info)
 	return (r); /* return length of buffer from _getline() */
 }
 
-/*
+/**
  * read_buf - reads a buffer
  * @info: parameter struct
  * @buf: buffer
@@ -108,7 +108,7 @@ ssize_t read_buf(info_t *info, char *buf, size_t *i)
 	return (r);
 }
 
-/*
+/**
  * _getline - gets the next line of input from STDIN
  * @info: parameter struct
  * @ptr: address of pointer to buffer, preallocated or NULL
@@ -151,7 +151,7 @@ int _getline(info_t *info, char **ptr, size_t *length)
 	return (s);
 }
 
-/*
+/**
  * sigintHandler - blocks ctrl-C
  * @sig_num: the signal number
  *
